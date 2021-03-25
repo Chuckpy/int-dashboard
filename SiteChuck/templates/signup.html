@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% block title %}Cadastro{% endblock %}
+
+{% block content %}
+      <h1>Essa é a página de cadastro</h1>
+      <form method="POST">
+            <h3 align="center">Cadastrar</h3>
+            <div class="form-group">
+                  <label for ="email"> Email </label>
+                  <input type="email"
+                   class="form-control"
+                   id="email" 
+                   name="email"
+                   placeholder="Digite o email" />
+            </div>
+            <div class="form-group">
+                  <label for ="firstname"> Primeiro nome </label>
+                  <input type="firstname"
+                   class="form-control"
+                   id="firstName" 
+                   name="firstName"
+                   placeholder="Digite seu primeiro nome" />
+            </div>
+            <div class="form-group">
+                  <label for ="password1"> Senha </label>
+                  <input type="password"
+                   class="form-control"
+                   id="password1" 
+                   name="password1"
+                   placeholder="Digite sua senha" />
+            </div>
+            <div class="form-group">
+                  <label for ="password">Digite sua senha novamente</label>
+                  <input type="password"
+                   class="form-control"
+                   id="password2" 
+                   name="password2"
+                   placeholder="Digite a senha novamente" />
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Cadastrar</button>   
+      </form>
+      
+{% endblock %}
